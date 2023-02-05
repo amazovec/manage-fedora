@@ -1,2 +1,6 @@
 ---
 # vars file for ssh
+
+
+## fail2ban reporting
+local_user_email: anze.mazovec@gmail.com
