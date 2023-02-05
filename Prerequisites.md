@@ -1,10 +1,10 @@
-## Prerequisites
-# Virtual machine
+# Prerequisites
+## Virtual machine
 These tasks will require a Fedora 37 Workstation virtual machine installed from the default distro and with the default settings. 
 
-# Assume 
+## Assume 
 
-# Create two users:
+## Create two users:
 
 ●	superuser
 ○	Allow sudo rights for remote management
@@ -12,7 +12,7 @@ These tasks will require a Fedora 37 Workstation virtual machine installed from 
 ●	user
 ○	Plain user
 
-# GitOps
+## GitOps
 
 Prepare a public GIT repository, make it public and document all changes of the code. Please send us a GIT repository link on test completion for review. 
 
@@ -22,7 +22,7 @@ Ansible
 
 Prepare ansible playbook and roles with selected tasks:
 
-●	Package management
+##	Package management
 ○	Update packages
 ○	Enable additional fedora workstation repositories
 ○	Add additional repositories 
@@ -32,14 +32,14 @@ Prepare ansible playbook and roles with selected tasks:
 ■	MySQL community (only for developers)
 ■	VSCode - Microsoft repo (only for developers)
 
-○	Install packages (common)
+##	Install packages (common)
 ■	gnome-tweaks
 ■	htop
 ■	keepassxc
 ■	slack
 ■	zsh
 
-○	Install packages (only for developer machines)
+##	Install packages (only for developer machines)
 ■	ansible
 ■	code (microsoft repo)
 ■	fd-find
@@ -51,7 +51,7 @@ Prepare ansible playbook and roles with selected tasks:
 ●	“Development tools” fedora package group
 ●	“C Development Tools and Libraries” package group
 
-●	Docker role 
+##	Docker role 
 ○	Install docker packages
 ■	docker
 ■	docker-compose-plugin
