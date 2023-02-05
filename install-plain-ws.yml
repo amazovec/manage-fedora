@@ -4,6 +4,9 @@
   roles: 
    - packages
    - ssh   
+   - firewall 
+   - docker   
+   - ghost-install 
  
   gather_facts: true
   become: yes

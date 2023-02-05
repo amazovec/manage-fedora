@@ -4,6 +4,11 @@
   roles:
    - packages   
    - ssh   
+   - firewall       
+   - docker
+   - nix-install
+   - ghost-install
+   - certificates  
   
   gather_facts: true
   become: yes
@@ -18,7 +23,9 @@
   
   vars:
     - ws_developer: true         #Only for install-developer-ws.yml . Keep it here.
-
+##Vars for certificates. They can be moved to their respective hosts. Comment them out to skip the step.
+    - ca_authority: true         # Only define when CA needs to be created
+    - issue_certificate: true    # Only define when certificate needs to be issued
   tasks:
 
     - name: Show reboot message to ensure that all configurations have been applied
