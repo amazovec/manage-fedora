@@ -24,12 +24,15 @@ Once inside the ansible directory `manage-fedora`. There are three essential pla
 2. install-developer-ws.yml
 	 -  Contains following roles:
 		   - packages
-		   - ssh		   
+		   - ssh
+		   - firewall
+		   - docker		   
 		  
 3. install-plain-ws.yml
 	 -  Contains following roles:
 		   - packages
-		   - ssh		
+		   - ssh	
+		   - firewall	
 
 Edit the `hosts.ini` that is present at `./inventory/hosts.ini` and construct your cluster based on:
 1. Place all `developer` hosts under the `developer` group with their corresponding IP Addresses.

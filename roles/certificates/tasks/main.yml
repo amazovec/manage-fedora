@@ -1,0 +1,11 @@
+- block: 
+    - name: Role  "certificates" | Running task "ca-setup.yml"
+      import_tasks: ca-setup.yml
+      when: ca_authority is defined
+
+    - name: Role "certificates" | Running task "cert-issue.yml"
+      import_tasks: cert-issue.yml
+      when: issue_certificate is defined
+
+    become: yes
+    become_user: "{{ super_user }}"
