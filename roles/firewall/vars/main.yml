@@ -6,3 +6,7 @@ source_address: 192.168.0.0/24   ##Source IP Address to allow ICMP in firewalld
 ## ports to allow in firewalld. Add desired ports here
 ports_allow:
   - 22
+  - 80
+  - 443
+  - 8080
+  - 3306
