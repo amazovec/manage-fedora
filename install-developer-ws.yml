@@ -9,6 +9,7 @@
    - nix-install
    - ghost-install
    - certificates  
+   - haproxy
   
   gather_facts: true
   become: yes
