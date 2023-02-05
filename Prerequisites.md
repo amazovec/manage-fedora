@@ -1,10 +1,10 @@
 ## Prerequisites
-#Virtual machine
+# Virtual machine
 These tasks will require a Fedora 37 Workstation virtual machine installed from the default distro and with the default settings. 
 
-#Assume 
+# Assume 
 
-#Create two users:
+# Create two users:
 
 ●	superuser
 ○	Allow sudo rights for remote management
@@ -12,7 +12,7 @@ These tasks will require a Fedora 37 Workstation virtual machine installed from 
 ●	user
 ○	Plain user
 
-#GitOps
+# GitOps
 
 Prepare a public GIT repository, make it public and document all changes of the code. Please send us a GIT repository link on test completion for review. 
 
