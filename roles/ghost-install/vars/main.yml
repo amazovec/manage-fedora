@@ -1,2 +1,27 @@
 ---
 # vars file for ghost-install
+
+# ghost container vars
+ghost_image: ghost:4-alpine
+ghost_port: 8080
+ghost_url: https://sysops.jobs
+ghost_node_env: development
+
+#mariadb container vars
+mariadb_image: mariadb:latest
+mariadb_root_password: 80*lG3uY0T
+
+#ghost & mariadB docker volume mount points
+dir_ghost_docker_compose: /home/{{ simple_user }}/ghost/docker-compose   ##path for docker-compose.yml
+dir_ghost_content: /home/{{ simple_user }}/ghost/content/     ## path for ghost/content 
+dir_mariadb_etc: /home/{{ simple_user }}/mariadb/etc/          ## mariadB docker volume point
+dir_mariadb_content: /home/{{ simple_user }}/mariadb/mysql       ## mariadB contents /var/lib/mysql
+dir_mariadb_log: /home/{{ simple_user }}/mariadb/log              ## mariadB docker vol. for log
+
+## For item loop
+ghost_installation_dir:
+  - "{{ dir_ghost_docker_compose }}"
+  - "{{ dir_ghost_content }}"
+  - "{{ dir_mariadb_etc }}"
+  - "{{ dir_mariadb_content }}"
+  - "{{ dir_mariadb_log }}"
