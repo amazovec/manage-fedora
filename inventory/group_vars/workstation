@@ -1,0 +1,8 @@
+# Contains common variables that are applicable to all hosts in workstation group
+
+# These two user vars must be available to all roles and tasks.
+#
+# simple name for user
+simple_user: user
+# simple name for super user
+super_user: superuser
