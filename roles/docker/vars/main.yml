@@ -1,0 +1,15 @@
+## docker packages
+
+
+docker_packages:
+  - docker-ce
+  - docker-ce-cli
+  - containerd
+  - docker-compose-plugin
+  - docker-compose
+
+
+## Add more users here for docker 
+docker_users:
+  - "{{ super_user }}"
+  - "{{ simple_user }}"
