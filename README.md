@@ -128,7 +128,7 @@ developer_system_packages_group:
 ###### 4. Vars for `ssh` role:
 
 ```
-local_user_email: mzainali33@gmail.com        ##Email for fail2ban
+local_user_email: anze.mazovec@gmail.com        ##Email for fail2ban
 ```
 
 - Location:
@@ -142,6 +142,7 @@ local_user_email: mzainali33@gmail.com        ##Email for fail2ban
 ```
 source_address: 192.168.0.0/24         ## Define Source IP address to allow ICMP
 ports_allow:                           ## ports to allow. Add desired ports
+- 22
 - 443
 - 80
 - 3306
